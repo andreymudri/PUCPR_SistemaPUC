@@ -1,5 +1,9 @@
 
+from services.menu.class_menu import show_class_menu
+from services.menu.discipline_menu import show_discipline_menu
+from services.menu.enrollment_menu import show_enrollment_menu
 from services.menu.student_menu import show_student_menu
+from services.menu.teachers_menu import show_teachers_menu
 
 
 def show_menu():
@@ -21,15 +25,19 @@ def main():
             
         elif option == "2":
             print("Menu de Disciplinas selecionada")
+            show_discipline_menu()
             
         elif option == "3":
             print("Menu de Professores selecionada")
+            show_teachers_menu()
             
         elif option == "4":
             print("Menu de Turmas selecionada")
+            show_class_menu()
             
         elif option == "5":
             print("Menu de Matrículas selecionada")
+            show_enrollment_menu()
             
         elif option == "6":
             print("Saindo do sistema...")
