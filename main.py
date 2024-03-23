@@ -16,32 +16,26 @@ def show_menu():
     print("6. Sair")
 
 def main():
+    menu_options = {
+        "1": show_student_menu,
+        "2": show_discipline_menu,
+        "3": show_teachers_menu,
+        "4": show_class_menu,
+        "5": show_enrollment_menu,
+    }
+
     while True:
         show_menu()
         option = input("\n Digite a opção desejada: ")
-        if option == "1":
-            print("Menu de Estudantes selecionada")
-            show_student_menu()
-            
-        elif option == "2":
-            print("Menu de Disciplinas selecionada")
-            show_discipline_menu()
-            
-        elif option == "3":
-            print("Menu de Professores selecionada")
-            show_teachers_menu()
-            
-        elif option == "4":
-            print("Menu de Turmas selecionada")
-            show_class_menu()
-            
-        elif option == "5":
-            print("Menu de Matrículas selecionada")
-            show_enrollment_menu()
-            
+
+        if option in menu_options:
+            print(f"Menu {menu_options[option].__name__} selecionada")
+            menu_options[option]()
         elif option == "6":
             print("Saindo do sistema...")
             break
+        else:
+            print("Opção inválida. Por favor, escolha uma opção válida.")
 
 
 if __name__ == "__main__":
