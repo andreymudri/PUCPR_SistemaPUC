@@ -1,4 +1,4 @@
-def show_teachers_menu():
+def teachers_menu():
     print("\n\nMenu de Professores:")
     print("1. Cadastrar Professor")
     print("2. Listar Professores")

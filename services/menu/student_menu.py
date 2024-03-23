@@ -1,4 +1,4 @@
-def show_student_menu():
+def student_menu():
     print("\n\nMenu de Estudantes:")
     print("1. Cadastrar Estudante")
     print("2. Listar Estudantes")

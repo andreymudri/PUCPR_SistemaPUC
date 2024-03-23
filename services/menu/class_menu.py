@@ -1,4 +1,4 @@
-def show_class_menu():
+def class_menu():
     print("\n\nMenu de Turmas:")
     print("1. Cadastrar Turma")
     print("2. Listar Turmas")

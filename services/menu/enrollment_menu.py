@@ -1,4 +1,4 @@
-def show_enrollment_menu():
+def enrollment_menu():
     print("\n\nMenu de Matrículas:")
     print("1. Matricular Aluno")
     print("2. Listar Matrículas")

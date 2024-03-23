@@ -1,9 +1,9 @@
 
-from services.menu.class_menu import show_class_menu
-from services.menu.discipline_menu import show_discipline_menu
-from services.menu.enrollment_menu import show_enrollment_menu
-from services.menu.student_menu import show_student_menu
-from services.menu.teachers_menu import show_teachers_menu
+from services.menu.class_menu import class_menu
+from services.menu.discipline_menu import discipline_menu
+from services.menu.enrollment_menu import enrollment_menu
+from services.menu.student_menu import student_menu
+from services.menu.teachers_menu import teachers_menu
 
 
 def show_menu():
@@ -17,11 +17,11 @@ def show_menu():
 
 def main():
     menu_options = {
-        "1": show_student_menu,
-        "2": show_discipline_menu,
-        "3": show_teachers_menu,
-        "4": show_class_menu,
-        "5": show_enrollment_menu,
+        "1": student_menu,
+        "2": discipline_menu,
+        "3": teachers_menu,
+        "4": class_menu,
+        "5": enrollment_menu,
     }
 
     while True:

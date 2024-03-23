@@ -1,4 +1,4 @@
-def show_discipline_menu():
+def discipline_menu():
     print("\n\nMenu de Disciplinas:")
     print("1. Cadastrar Disciplina")
     print("2. Listar Disciplinas")
