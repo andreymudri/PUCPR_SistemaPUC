@@ -1,4 +1,5 @@
 
+from services.academic_service import AcademicService
 from services.menu.class_menu import class_menu
 from services.menu.discipline_menu import discipline_menu
 from services.menu.enrollment_menu import enrollment_menu
@@ -16,6 +17,7 @@ def show_menu():
     print("6. Sair")
 
 def main():
+    academic_service = AcademicService()
     menu_options = {
         "1": student_menu,
         "2": discipline_menu,
@@ -30,7 +32,7 @@ def main():
 
         if option in menu_options:
             print(f"Menu {menu_options[option].__name__} selecionada")
-            menu_options[option]()
+            menu_options[option](academic_service)
         elif option == "6":
             print("Saindo do sistema...")
             break
